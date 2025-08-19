@@ -454,7 +454,7 @@ export const Terminal = () => {
               {asciiHeader}
             </pre>
             <pre
-              className="w-fit whitespace-pre overflow-x-auto leading-[1] text-[10px] text-indigo-600 dark:text-purple-500 font-terminal"
+              className="w-fit whitespace-pre overflow-x-auto overflow-y-hidden leading-[1] text-[10px] text-indigo-600 dark:text-purple-500 font-terminal"
               aria-label="ascii-art"
             >
               {asciiBody}
