@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --base-url: /personal-portfolio/;
+  }
+
   @font-face {
     font-family: "Monocraft";
     src: url("/assets/Monocraft.ttc") format("truetype-collection"), url("/assets/Monocraft.ttc") format("truetype");

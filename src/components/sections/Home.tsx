@@ -1,4 +1,4 @@
-import ME from "/assets/Me.png";
+const BASE_URL = import.meta.env.BASE_URL;
 import SocialLinksGroup from "../ui/SocialLinksGroup";
 import SVGShapes from "../SVGShapes";
 import { useEffect, useRef, useState } from "react";
@@ -66,7 +66,7 @@ export default function Home() {
     >
       <div className="max-w-[540px] flex flex-col items-center">
         <img
-          src={ME}
+          src={`${BASE_URL}assets/Me.png`}
           alt=""
           className="rounded-full w-32 h-32 object-cover mb-6"
         />

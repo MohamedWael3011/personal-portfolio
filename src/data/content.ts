@@ -27,7 +27,8 @@ export const PROFILE = {
     "Focuses on shipping clean, accessible UIs with React. I build responsive features, leverage headless components (shadcn/ui), and care deeply about UX. While also building backend services with NestJS mantaining clean code and good practices for complex logic.",
   summaryTwo:
     "Previously, I freelanced building Discord bots and internal tools. I hold a dual BSc in Software Engineering (UEL, UK & Ain Shams University, EG), with honours and a CGPA of 3.76",
-  resumePath: "/Mohamed_Wael_Resume.pdf",
+  resumePath:
+    "https://docs.google.com/document/d/159wInlJ9EJgT8vfKIfa9Eac-Pcd0_yrR/edit?usp=sharing&ouid=107469307621375633419&rtpof=true&sd=true",
 };
 
 export const EDUCATION_ITEMS: TimelineItem[] = [

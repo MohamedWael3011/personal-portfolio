@@ -7,6 +7,7 @@ import { PROFILE } from "../../data/content";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+  const BASE_URL = import.meta.env.BASE_URL;
   const sectionRef = useRef<HTMLElement | null>(null);
 
   useGSAP(
@@ -45,7 +46,7 @@ export default function About() {
       <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
         <div className="about_img flex-shrink-0">
           <img
-            src="/assets/aboutme.png"
+            src={`${BASE_URL}assets/aboutme.png`}
             alt="Mohamed Wael"
             className="w-48 h-48 rounded-full object-cover shadow-lg"
           />
