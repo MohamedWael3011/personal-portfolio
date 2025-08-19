@@ -66,7 +66,7 @@ export default function Home() {
     >
       <div className="max-w-[540px] flex flex-col items-center">
         <img
-          src={`${BASE_URL}assets/Me.png`}
+          src={`${BASE_URL}assets/Me.webp`}
           alt=""
           className="rounded-full w-32 h-32 object-cover mb-6"
         />

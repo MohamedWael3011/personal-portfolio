@@ -46,7 +46,7 @@ export default function About() {
       <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
         <div className="about_img flex-shrink-0">
           <img
-            src={`${BASE_URL}assets/aboutme.png`}
+            src={`${BASE_URL}assets/aboutme.webp`}
             alt="Mohamed Wael"
             className="w-48 h-48 rounded-full object-cover shadow-lg"
           />
