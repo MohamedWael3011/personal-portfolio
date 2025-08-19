@@ -1,76 +1,302 @@
+@import "@fontsource/rubik";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
+  @font-face {
+    font-family: "Monocraft";
+    src: url("/assets/Monocraft.ttc") format("truetype-collection"), url("/assets/Monocraft.ttc") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
- 
+
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
- 
+
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
- 
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
- 
+
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
- 
+
     --radius: 0.5rem;
+
+    --title-color: hsl(244, 24%, 26%);
+    --container-color: hsl(0, 0%, 98%);
+    --body-color: hsl(261, 47%, 94%);
+    --text-color: hsl(244, 16%, 43%);
+
+    --body-font: "Rubik", sans-serif;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
   }
- 
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
- 
+
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
- 
+
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
- 
+
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
- 
+
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
- 
+
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
- 
+
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
- 
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    --title-color: hsl(0, 0%, 95%);
+    --container-color: hsl(222, 47%, 11%);
+    --body-color: hsl(222, 47%, 11%);
+    --text-color: hsl(0, 0%, 75%);
+
+    --shadow: 0px 5px 20px 0px rgb(0 0 0 / 30%);
   }
-}
- 
-@layer base {
+
   * {
     @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  body {
+
+  html {
+    scroll-behavior: auto;
+    overflow-x: hidden;
+  }
+
+  body,
+  input,
+  textarea {
     @apply bg-background text-foreground;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+
+  body {
+    background-color: var(--body-color);
+    line-height: 1.7;
+    transition: background-color 0.3s ease;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+    transition: color 0.3s ease;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
+
+  .nav_link {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    transition: 0.4s;
+  }
+
+  .nav_link:hover {
+    color: hsl(43, 100, 68);
+  }
+
+  .copyright {
+    writing-mode: vertical-rl;
+    transform: rotate(-180);
+  }
+
+  h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+  }
+
+  .home_social_link {
+    color: var(--title-color);
+    font-size: 1.3rem;
+    transition: 0.3s;
+  }
+
+  .home_social_link:hover {
+    color: #D600D6;
+
+  }
+
+  .shapes {
+    z-index: -10;
+  }
+
+  .shape {
+    position: absolute;
+  }
+
+  .s1 {
+    left: 8%;
+    top: 10%;
+  }
+
+  .s2 {
+    left: 38%;
+    top: 20%;
+  }
+
+  .s3 {
+    left: 12%;
+    bottom: 30%;
+  }
+
+  .s4 {
+    left: 10%;
+    bottom: 10%;
+  }
+
+  .s5 {
+    left: 50%;
+    top: 10%;
+  }
+
+  .s6 {
+    left: 47%;
+    bottom: 10%;
+  }
+
+  .s7 {
+    top: 20%;
+    right: 25%;
+  }
+
+  .s8 {
+    bottom: 20%;
+    right: 24%;
+  }
+
+  .s9 {
+    top: 10%;
+    right: 2%;
+  }
+
+  .s10 {
+    top: 45%;
+    right: 11%;
+  }
+
+  .s11 {
+    bottom: 10%;
+    right: 2%;
+  }
+
+  .section_title {
+    font-size: var(--h1-font-size);
+    margin-left: 0.875rem;
+    font-weight: var(--font-bold);
+    position: relative;
+    margin-bottom: 3.75rem;
+    transition: color 0.3s ease;
+  }
+
+  .about_container {
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+  }
+
+  .about_data {
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .skills {
+    row-gap: 1.25rem;
+  }
+
+  .skills_titles {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .skills_num {
+    line-height: 1.25;
+  }
+
+  .skillbar,
+  .percentage {
+    height: 7px;
+    border-radius: 0.25rem;
+  }
+
+  .skillbar {
+    background-color: #f1f1f1;
+  }
+
+  .percentage {
+    display: block;
+  }
+
+  .font-terminal {
+    font-family: "Monocraft", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 }
