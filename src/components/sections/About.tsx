@@ -49,6 +49,7 @@ export default function About() {
             src={`${BASE_URL}assets/aboutme.webp`}
             alt="Mohamed Wael"
             className="w-48 h-48 rounded-full object-cover shadow-lg"
+            loading="lazy"
           />
         </div>
 

@@ -69,6 +69,7 @@ export default function Home() {
           src={`${BASE_URL}assets/Me.webp`}
           alt=""
           className="rounded-full w-32 h-32 object-cover mb-6"
+          loading="lazy"
         />
         <h1 className="mb-2">Mohamed Wael</h1>
         {/* Make it with Typed */}

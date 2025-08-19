@@ -10,6 +10,7 @@ export default function Footer() {
             src={`${BASE_URL}assets/purple_fox.webp`}
             alt="Purple Fox"
             className="w-32 h-32 object-contain"
+            loading="lazy"
           />
           <p className="text-gray-600 dark:text-gray-400 text-sm">
             Developed with ❤️ • {currentYear}
