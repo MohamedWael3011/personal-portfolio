@@ -26,15 +26,15 @@ export const PROFILE = {
   summaryOne:
     "Focuses on shipping clean, accessible UIs with React. I build responsive features, leverage headless components (shadcn/ui), and care deeply about UX. While also building backend services with NestJS mantaining clean code and good practices for complex logic.",
   summaryTwo:
-    "Previously, I freelanced building Discord bots and internal tools. I hold a dual BSc in Software Engineering (UEL, UK & Ain Shams University, EG), with honours and a CGPA of 3.76",
+    "Previously, I freelanced building Discord bots and internal tools. I hold a dual BSc in Software Engineering (UEL, UK & Ain Shams University, EG), with honors and a CGPA of 3.76",
   resumePath:
     "https://docs.google.com/document/d/159wInlJ9EJgT8vfKIfa9Eac-Pcd0_yrR/edit?usp=sharing&ouid=107469307621375633419&rtpof=true&sd=true",
 };
 
 export const EDUCATION_ITEMS: TimelineItem[] = [
   {
-    period: "Oct ’21 – Jul ’25",
-    title: "BSc Software Engineering (Dual Degree) with honours and CGPA 3.76",
+    period: "Oct '21 – Jul '25",
+    title: "BSc Software Engineering (Dual Degree) with honors and CGPA 3.76",
     description:
       "University of East London (UK) & Faculty of Computer and Information Sciences, Ain Shams University (EG).",
   },
@@ -42,19 +42,24 @@ export const EDUCATION_ITEMS: TimelineItem[] = [
 
 export const EXPERIENCE_ITEMS: TimelineItem[] = [
   {
-    period: "Jan ’24 – Present",
+    period: "Feb '26 – Present",
+    title: "Software Development Engineer I, noon (Cairo, EG)",
+    description: "Joined noon as SDE1, Ongoing the Frontend CAKE program",
+  },
+  {
+    period: "Jan '24 – Jan '26",
     title: "Full‑Stack Developer, StorkTech (Cairo, EG)",
     description:
       "Built responsive front‑end with React/Vite; used shadcn/ui; focused on UX/accessibility; delivered invoicing system with translation logs and fallback mechanisms using NestJS and PrismaORM.",
   },
   {
-    period: "Dec ’23 – Jan ’25",
+    period: "Dec '23 – Jan '25",
     title: "Freelance Developer",
     description:
       "Commissioned Discord bots using discord.py/discord.js and internal automation tools.",
   },
   {
-    period: "Sept ’23",
+    period: "Sept '23",
     title: "Full‑Stack Intern, Hypercell (Cairo, EG)",
     description:
       "Spring Boot + Angular training; shipped a simple blog web app; received recommendation letter.",
